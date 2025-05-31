@@ -6,6 +6,7 @@ on:
     - 'v*'
     - 'test-v*'
   pull_request:
+  workflow_dispatch:
 
 env:
   ALPINE_VERSION: 3.22.0
