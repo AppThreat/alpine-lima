@@ -47,7 +47,7 @@ Note that this repo includes the [Alpine aports](https://github.com/alpinelinux/
 git submodule update --init
 ```
 
-The examples show the default values for `ALPINE_VERSION=3.21.3 EDITION=std`, `ARCH` defaults to the OS architecture `uname -m`.
+The examples show the default values for `ALPINE_VERSION=3.22.0 EDITION=std`, `ARCH` defaults to the OS architecture `uname -m`.
 The options need to be specified only to select non-default setting.
 
 ### Build the builder
