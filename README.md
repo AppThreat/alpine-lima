@@ -55,7 +55,7 @@ The options need to be specified only to select non-default setting.
 The ISO builder will be created inside a docker image. You can specify the Alpine version used to create it:
 
 ```
-make mkimage ALPINE_VERSION=3.21.3
+make mkimage ALPINE_VERSION=3.22.0
 ```
 
 ### Build the ISO
@@ -63,17 +63,17 @@ make mkimage ALPINE_VERSION=3.21.3
 This docker image can then be used to create ISO images that will be stored under `./iso`:
 
 ```
-make iso ALPINE_VERSION=3.21.3 EDITION=std
+make iso ALPINE_VERSION=3.22.0 EDITION=std
 ```
 
 ### Run the ISO with qemu
 
 ```
-make run ALPINE_VERSION=3.21.3 EDITION=std
+make run ALPINE_VERSION=3.22.0 EDITION=std
 ```
 
 ### Run the ISO with Lima
 
 ```
-make lima ALPINE_VERSION=3.21.3 EDITION=std
+make lima ALPINE_VERSION=3.22.0 EDITION=std
 ```

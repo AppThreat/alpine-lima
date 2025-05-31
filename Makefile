@@ -1,4 +1,4 @@
-ALPINE_VERSION ?= 3.21.3
+ALPINE_VERSION ?= 3.22.0
 REPO_VERSION ?= $(shell echo "$(ALPINE_VERSION)" | sed -E 's/^([0-9]+\.[0-9]+).*/v\1/')
 GIT_TAG ?= $(shell echo "v$(ALPINE_VERSION)" | sed 's/^vedge$$/origin\/master/')
 BUILD_ID ?= $(shell git describe --tags)
@@ -21,7 +21,7 @@ ARCH_ALIAS_x86_64 = amd64
 ARCH_ALIAS_aarch64 = arm64
 ARCH_ALIAS = $(shell echo "$(ARCH_ALIAS_$(ARCH))")
 
-QEMU_VERSION=v9.2.2-52
+QEMU_VERSION=v9.2.2
 BINFMT_IMAGE=tonistiigi/binfmt:qemu-$(QEMU_VERSION)
 
 .PHONY: mkimage
